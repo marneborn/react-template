@@ -6,7 +6,6 @@ const ReactShallowRenderer = require('react-test-renderer/shallow');
 const Thing = require('../js/Thing');
 
 describe('#Thing', function() {
-  const color = 'pink';
   let thing;
 
   beforeEach(function() {
