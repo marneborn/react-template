@@ -34,7 +34,7 @@ const commonRules = {
   'guard-for-in': 'off',
   'handle-callback-err': 'error',
   'indent': ['error', 2],
-  'jsx-quotes': 'error',
+  'jsx-quotes': ['error', 'prefer-double'],
   'key-spacing': ['error', { 'align': 'colon' }],
   'keyword-spacing': 'error',
   'lines-around-comment': 'error',
@@ -210,6 +210,13 @@ module.exports = (gulp) => {
     gulp
       .src(webSrcFiles)
       .pipe(eslint({
+        parserOptions: {
+          ecmaVersion: 6,
+          sourceType: 'module',
+          ecmaFeatures: {
+            jsx: true
+          }
+        },
         fix: true,
         rules: _.defaults(
           webRules,
