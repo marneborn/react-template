@@ -156,6 +156,12 @@
 		<tab title="PyCmd" icon="%PYCMDEXE%" use_default_icon="0">
 			<console shell="%PYCMDEXE%" init_dir="" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
 		</tab>
+		<tab title="Mongo" icon="%PYCMDEXE%" use_default_icon="0">
+			<console shell="mongod --dbpath %MONGODB%" init_dir="" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
+		</tab>
+		<tab title="MES" icon="%PYCMDEXE%" use_default_icon="0">
+			<console shell="&quot;C:\MySQL\MySQL Server 5.6\bin\mysqld.exe&quot; --defaults-file=&quot;%USERPROFILE%\Programming\MySQL DBs\thinFilm.ini&quot;" init_dir="&quot;%USERPROFILE%\Programming\MySQL DBs&quot;" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
+		</tab>
 		<tab title="server" icon="%PYCMDEXE%" use_default_icon="0">
 			<console shell="&quot;%GULPCMD%&quot; server:dev" init_dir="" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
 		</tab>
